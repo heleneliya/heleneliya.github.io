@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Penguins</title>
+   <style>
+     body {
+       background-image: linear-gradient(#052129, #1c8dac, #052129);
+     }
+     .container {
+       max-width: 600px;
+       margin: 0 auto;
+       padding: 30px;
+     }
+ 
+     h1 {
+       text-align: center;
+       color: #e8ebea;
+       font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+       line-height: 0%;
+       border: 20px dotted black;
+       border-radius: 20px;
+       transition: 1s ease-in-out;
+     }
+     h1:hover {
+       -webkit-transform: scale(1.5);
+       -ms-transform: scale(1.5);
+       transform: scale(1.5);
+     }
+ 
+     h2 {
+       text-align: center;
+       color: #b5bfc2;
+       font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+       font-size: medium;
+     }
+ 
+     #penguin-gif {
+       display: block;
+       margin: 0 auto;
+       max-width: 100%;
+       border-radius: 100px;
+       border: 4px solid black;
+       transition: .5s ease;
+     }
+     #penguin-gif:hover {
+       box-shadow: 0 0 0 10px #000000;
+       transition: .5s ease;      }
+ 
+     .penguin-information {
+       line-height: 1.5 px;
+       font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+       text-align: center;
+       color: #e8ebea;
+       font-size: 20px;
+       margin: 20px, 0, 10px;
+       transition: all 300ms ease-in-out;
+     }
+ 
+     .penguin-intro, .endangered, .threats {
+       transition: all 200ms ease-in-out;
+     }
+ 
+     .penguin-intro:hover, .endangered:hover, .threats:hover {
+       background: #6263575d;
+       border-radius: 20px;
+     }
+ 
+     .threats {
+       text-align: center;
+       list-style: none;
+       line-height: 1.5 px;
+       font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+       color: #1a1c1d;
+     }
+ 
+     .penguin-ending {
+       text-align: center;
+       line-height: 1.5 px;
+       font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+       color: #e8ebea;
+       font-weight: bolder;
+       font-size: 25px;
+       background: linear-gradient(to right, #e8ebea, #082D38, 50%, #e8ebea 50%);
+       background-clip: text;
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+       background-size: 200% 100%;
+       background-position: 100%;
+       transition: background-position 400ms ease;
+     }
+ 
+     .penguin-ending:hover {
+       background-position: 0 100%;
+     }
+ 
+     button {
+       display: block;
+       margin: 12px auto;
+       color: lightblue;
+       background: black;
+       padding: 10px 30px;
+       border-radius: 50px;
+       border: none;
+       box-shadow: 1px 1px 3px #c4d8dd;
+       transition: all 200ms ease-in-out;
+     }
+ 
+     button:hover {
+       opacity: 0.6;
+       cursor: pointer;
+     }
+ 
+     #learn-more {
+       margin-top: 10 px;
+       display: block;
+       text-align: center;
+       text-decoration: none;
+       color: lightblue;
+       font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+     }
+ 
+     #learn-more:hover {
+       text-decoration: underline
+     }
+ 
+     #credit {
+       display: block;
+       text-align: center;
+       font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+       transition: 1s ease-in-out;
+     }
+ 
+     #credit:hover {
+       -webkit-transform: scale(1.5);
+       -ms-transform: scale(1.5);
+       transform: scale(1.5);
+     }
+ 
+     #name {
+       color: lightsalmon;
+     }
+    
+   </style>
+ </head>
+ <body>
+   <div class="container">
+     <h1>The Galápagos Penguin</h1>
+     <h2><em>Spheniscus mendiculus</em></h2>
+ 
+     <img
+       id="penguin-gif"
+       src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/027/123/original/penguingif.gif?1644785864"
+       alt="A Galapagos penguin standing on a rock"
+       width="500"
+     />
+     <div class="penguin-information">
+       <p class="penguin-intro">
+         The Galápagos penguin is the only type of penguin that is found north
+         of the Equator. Their ecosystem resides in the <strong>Galápagos Islands</strong>, an <em>archipelago</em> (group of islands) 605 miles west of
+         Ecuador.
+       </p>
+       <p class="endangered">
+         These penguins are critically endangered, with fewer than 2000 left on Earth. Some threats include:
+       </p>
+       </div>
+       <ul class="threats">
+         <li>Pollution 🗑</li>
+         <li>Climate change 🌎</li>
+         <li>Introduced species🐈</li>
+       </ul>
+       <p class="penguin-ending">Let's work together and help the Galápagos penguin.</p>
+     </div>
+     <a
+       href="https://www.galapagos.org/conservation/our-work/ecosystem-restoration/increasing-the-galapagos-penguin-population/"
+       target="_blank"
+       id="learn-more"
+     >
+       Learn more about saving the Galápagos penguin
+     </a>
+   <button class="adopt-button">Adopt a Galápagos Penguin</button>
+     <br />
+     <div id="credit">
+       This page was coded by
+       <a
+         id="name"
+         href="https://www.linkedin.com/in/helen-eliya-385028224/"
+         target="_blank"
+         >Helen Eliya</a
+       >
+       <span>🐧</span>
+     </div>
+   </div>
+   <script>
+     function adopt() {
+       let name = prompt("What is your name?");
+       let email = prompt("What is your email address?");
+ 
+       alert(
+         "Thank you " +
+           name +
+           ", we will email you at " +
+           email +
+           " with the adoption link! " +
+           "🐧"
+       );
+     }
+     let adoptButton = document.querySelector(".adopt-button");
+     adoptButton.addEventListener("click", adopt);
+   </script>
+ </body>
+</html>
