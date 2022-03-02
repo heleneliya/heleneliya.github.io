@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Lesson 20 Challenge</title>
+   <style>
+     h1 {
+       color: #885df1;
+       font-size: 35px;
+       font-weight: bold;
+       text-decoration: underline;
+       text-align: center;
+     }
+     h2 {
+       color: #272044;
+       text-align: center;
+       font-weight: normal;
+     }
+     button {
+       display: block;
+       font-size: 13px;
+       margin: 0 auto;
+       padding: 12px 15px;
+       color: #885df1;
+       background: transparent;
+       border: 1px solid #885df1;
+       border-radius: 30px;
+       box-shadow: 2px 5px 3px lightgray;
+       transition: all 200ms ease-in-out;
+     }
+ 
+     button:hover {
+       background: #885df1;
+       color: #f6f2fe;
+       cursor: pointer;
+     }
+     ul {
+       padding: 0px;
+       list-style-type: none;
+       text-align: center;
+     }
+ 
+     li {
+       display: inline;
+       margin: 30px;
+     }
+ 
+     a {
+       text-decoration: none;
+     }
+ 
+     a:hover {
+       text-decoration: underline;
+     }
+     body {
+       background: #f6f2fe;
+     }
+     .coders {
+       color: blue;
+     }
+     .courses {
+       color: red;
+     }
+     .stories {
+       color: green;
+     }
+     p {
+       text-align: center;
+     }
+     img {
+       display: block;
+       margin: 0 auto;
+     }
+ 
+     #social-media {
+       font-size: 15px;
+       text-align: center;
+       margin: 30px;
+     }
+ 
+     .communication {
+       color: #885df1;
+     }
+   </style>
+ </head>
+ <body>
+   <h1>SheCodes</h1>
+   <h2>Coding Workshop</h2>
+   <button>Apply now</button>
+   <ul>
+     <li>
+       <a
+         href="https://www.shecodes.io/students"
+         target="_blank"
+         class="coders"
+         >Coders</a
+       >
+     </li>
+     <li>
+       <a
+         href="https://www.shecodes.io/workshops"
+         target="_blank"
+         class="courses"
+         >Courses</a
+       >
+     </li>
+     <li>
+       <a
+         href="https://www.shecodes.io/stories"
+         target="_blank"
+         class="stories"
+         >Stories</a
+       >
+     </li>
+   </ul>
+   <hr />
+   <p>
+     <strong> More info </strong>
+   </p>
+   <img src="https://tinyurl.com/3p8yu8pa" alt="A woman coding!" width="200" />
+   <div id="social-media">
+     <span class="communication"> Email:</span>
+     <span> hello@shecodes.io</span>
+     <span class="communication"> Instagram:</span>
+     <span> @shecodes.io</span>
+   </div>
+ </body>
+</html>
